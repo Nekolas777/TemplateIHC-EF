@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header,
@@ -329,6 +330,7 @@ nav ul {
 input {
     width: 100%;
     padding: 10px 0;
+    text-indent: 8px;
 }
 
 .input_group {
@@ -353,6 +355,7 @@ input {
 #contact .btn_send:hover {
     background-color: #407737;
     color: #fff;
+    cursor: pointer;
 }
 
 
