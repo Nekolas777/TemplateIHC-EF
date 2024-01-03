@@ -23,6 +23,7 @@ h1 {
 
 p {
     font-size: 1.8rem;
+    font-family: 'Heebo';
 }
 
 #header {
@@ -358,6 +359,88 @@ input {
     cursor: pointer;
 }
 
+/* ------------------ CONTACT SECTION ------------------ */
+
+.footer {
+    background-color: #000000d3;
+    width: 100%;
+    text-align: center;
+}
+
+.footer > h1 {
+    font-size: 2.4rem;
+    margin: 35px 0;
+    color: #445D48;
+}
+
+.footer > p {
+    color: #A2C579;
+    font-size: 1.3rem;
+}
+
+.footer p {
+    font-weight: lighter;
+}
+
+.footer hr {
+    margin: 35px 0;
+    border: 0;
+    border-top: 1px #fff solid;
+    opacity: .25;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    color: #FFFBF5;
+}
+
+.footer-info p {
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.footer-info p:last-child > a {
+    color: green;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.social-links > a {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    background-color: #646464;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.social-links > a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.copyright-container {
+    margin-top: 35px;
+    padding: 20px 0;
+    color: #fff;
+    background-color: #0F0F0F;
+}
+
+.copyright-container > p {
+    font-size: 1.1rem;
+}
+
 
 /* ------------------ MEDIA QUERYS ------------------ */
 
@@ -406,6 +489,9 @@ input {
         margin: 0 auto;
     }
 
+    .social-links {
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 1200px) {
