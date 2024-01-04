@@ -48,6 +48,12 @@ nav #icon {
     line-height: 50px;
     cursor: pointer;
     display: none;
+    line-height: 20px;
+}
+
+.nav-container .logo {
+    display: none;
+    cursor: pointer;
 }
 
 #header .logo img {
@@ -532,20 +538,39 @@ input {
     }
 
     ul {
-        display: none !important;
+        /* border: 1px solid blue; */
+        height: 100dvh;
+        width: 80dvw;
+        position: fixed;
+        top: 0;
+        right: 0;
+        visibility: hidden;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column !important;
+        background-color: #9fc574;
+        left: -300px;
+        transition: left 0.4s ease-in-out;
     }
 
-    ul.active{
-        display: flex !important; 
-        flex-direction: column !important;
-        position: fixed;
-        padding-left: 30px;
-        top: 80px;
-        left: 0;
+    .nav-container .logo {
+        display: flex;
+        align-self: start;
+        justify-content: start;
         width: 100%;
-        background-color: aliceblue;
-        padding: 10px;
-        z-index: 9999;
+        margin-left: 50px;
+    }
+
+    ul > li {
+        width: 100%;
+        align-self: start;
+        margin-left: 50px;
+    }
+
+    li > a {
+        font-size: 1.8rem !important;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
 
     #icon {
